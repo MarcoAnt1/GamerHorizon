@@ -1,0 +1,24 @@
+.content {
+    max-width: 985px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.ul-center {
+    list-style: none;
+    display: inline-flex
+}
+
+.ul-center li {
+    margin: 10px;
+}
+
+img {
+    float: left;
+    width:  286px;
+    height: 350px;
+    object-fit: cover;
+}
