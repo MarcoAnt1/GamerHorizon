@@ -1,37 +1,31 @@
 <app-nav></app-nav>
 
 <div class="content">
-  <h1 class="text-center">{{ title }}</h1>
-  <ul class="ul-center">
-    <li>
-      <div class="card" style="width: 18rem;">
-        <img src="../assets/images/god-of-war-ragnarock-cover.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">God Of War</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="card" style="width: 18rem;">
-        <img src="../assets/images/elden-ring-cover.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Elden Ring</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="card" style="width: 18rem;">
-        <img src="../assets/images/the-last-of-us-part-2-cover.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">The Last Of Us Part II</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </li>
-  </ul>
+  <div class="row">
+    <div class="col l12 center">
+      <h1 class="text-center">{{ title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col l3 center border">
+    
+    </div>
+    <div class="col l6 center border games">
+      <ul class="ul-center">
+        <li *ngFor="let game of games">
+          <div class="card" >
+            <img src="../assets/images/{{ game.cover }}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title"> {{ game.name }}</h5>
+              <p class="card-text"> {{ game.description }}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col l3 center border">
+
+    </div>  
+  </div>
 </div>

@@ -1,15 +1,16 @@
-.content {
-    max-width: 985px;
-    margin: auto;
-}
-
-.text-center {
-    text-align: center;
-}
-
 .ul-center {
     list-style: none;
-    display: inline-flex
+    display: inline-flex;
+    padding: 0;
+}
+
+.row {
+    margin: 5px;
+}
+
+.border {
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .ul-center li {
